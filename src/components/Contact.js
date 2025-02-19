@@ -3,7 +3,6 @@
 // import { Icon } from '@iconify/react/dist/iconify.js';
 // import { Link } from 'react-router-dom';
 import PageStructure from './PageStructure';
-import Header from './Header';
 
 function Contact() {
 
@@ -11,11 +10,11 @@ function Contact() {
   return (
     <PageStructure>
 
-        <Header />
+    <main className="contact">
+      <p>Please mail me @:</p>
+      <p><a href="mailto:adegboyegajosephdon@gmail.com">adegboyegajosephdon@gmail.com</a></p>
 
-        <div className="home">
-          contact
-        </div>
+    </main>
     </PageStructure> 
   );
 }

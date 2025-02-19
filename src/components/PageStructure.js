@@ -1,5 +1,6 @@
-// import { useContext } from 'react';
+import { useLocation } from 'react-router-dom';
 import Header from './Header';
+import Footer from './Footer';
 // import Footer from './Footer';
 // import { DataContext } from "./DataContext";
 
@@ -8,17 +9,19 @@ import Header from './Header';
 
 function PageStructure({children}) {
 
-
-  // const { data } = useContext(DataContext);
-
-
-  // console.log(data)
-
+  const location = useLocation(); 
 
   return (
     <div className="page-structure">
 
       <Header />
+
+      {children}
+
+
+      {
+        !(location.pathname === '/about' || location.pathname === '/techstack') && <Footer />
+      }
 
         
     </div>
