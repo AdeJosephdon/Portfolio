@@ -31,7 +31,7 @@ function Footer() {
     <hr />
 
     <div className="footer">
-        <nav className='hero-navigation'>
+        <nav className='hero-navigation hero-links'>
           <Link to="/"> Home </Link>
           <Link to="/about"> About </Link>
           <Link to="/techstack"> Tech Stack </Link>

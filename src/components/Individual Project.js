@@ -7,11 +7,11 @@ function IndividualProject(prop) {
 
   return (
       
-                <button className='individual-project'>
-        <Link to={`/itemdescription/${prop.id}`}>
+      <button className='individual-project'>
+        <Link to={`/individualprojectdescription/${prop.id}`}>
         
         <div className='individual-project-div'>
-                            <div className='project-image-container'>
+            <div className='project-image-container'>
                   <img src={prop.image} alt={prop.title} />
                   </div>
       
@@ -38,10 +38,7 @@ function IndividualProject(prop) {
         </div>
         
         </Link>
-
-
-      
-                </button>
+      </button>
   );
 }
 

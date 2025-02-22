@@ -6,7 +6,7 @@ import Contact from './components/Contact';
 import About from './components/About';
 import Projects from './components/Projects';
 import TechStack from './components/TechStack';
-// import ItemDescription from './components/ItemDescription';
+import IndividualProjectDescription from './components/IndividualProjectDescription';
 
 
 function App() {
@@ -27,11 +27,10 @@ function App() {
     },
     {path: '/techStack',
     element: <TechStack /> 
+    },
+    {path: '/individualprojectdescription/:productId',
+    element: <IndividualProjectDescription /> 
     }
-    // ,
-    // {path: '/itemdescription/:productId',
-    // element: <ItemDescription /> 
-    // }
   ])
   return (
     <div className="App">
