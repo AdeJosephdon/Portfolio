@@ -14,9 +14,17 @@ function About() {
     <main className="about">
       <h1>About Me</h1>
 
-      <p className='about-me'>
-       I am a Frontend Developer with a petroleum engineering background, bringing an analytical mindset to building purposeful, responsive, and interactive web applications. My projects solve real-world problems, from streamlining information retrieval to enhancing data analysis. I have completed the freeCodeCamp React course and am currently developing a fully functional react e-commerce platform, refining my skills in authentication, payment integration, and real-time analytics.
-      </p>
+      <div className="about-me">
+        <p>
+          I am a Frontend Developer with a petroleum engineering background, bringing an analytical mindset to building purposeful, responsive, and interactive web applications.
+        </p>
+        <p>
+          My projects solve real-world problems, from streamlining information retrieval to enhancing data analysis.
+        </p>
+        <p>
+          I have completed the freeCodeCamp React course and am currently developing a fully functional React e-commerce platform, refining my skills in authentication, payment integration, and real-time analytics.
+        </p>
+      </div>
 
 
       <h1>Work Experience</h1>

@@ -10,7 +10,7 @@ function Home() {
     const { data } = useContext(DataContext);
     
 
-    const projectsMapped = data.map((project) => (
+    const projectsMapped = data.slice(0,3).map((project) => (
       <IndividualProject 
       key={project.id} 
       id={project.id} 
