@@ -5,7 +5,7 @@ import PageStructure from './PageStructure';
 import IndividualProject from './Individual Project';
 
 
-function Home() {
+function Home({isDark, colorMode}) {
 
     const { data } = useContext(DataContext);
     
@@ -55,7 +55,7 @@ function Home() {
           <button className='technology'><Icon icon="devicon:javascript" width="60" height="60" /></button>
           <button className='technology'><Icon icon="devicon:react-wordmark" width="60" height="60" /></button>
           <button className='technology'><Icon icon="devicon:d3js" width="60" height="60" /></button>
-          <button className='technology'><Icon icon="file-icons:mathjax" width="60" height="60" /></button>
+          <button className='technology mathjax'><Icon icon="file-icons:mathjax" width="60" height="60" /></button>
 
         </div>
       </div>
@@ -68,6 +68,14 @@ function Home() {
           {projectsMapped}
         </div>
       </div>
+
+      <button className='day-night-switch' onClick={colorMode}>
+
+        {isDark ? 
+<Icon icon="meteocons:clear-day-fill" width="24" height="24" />
+:
+<Icon icon="game-icons:night-sky" width="24" height="24" />}
+      </button>
 
 
     </main>

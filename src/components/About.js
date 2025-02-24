@@ -118,10 +118,18 @@ function About() {
             <div className='company-and-location'>
               <span className='centralize'>
                 <span>
+                  <Icon icon="fxemoji:graduationcap" width="24" height="24" />
+                </span>
+                <span>Second-Class Upper Division</span>
+              </span>
+              
+              <span className='centralize'>
+                <span>
                   <Icon icon="mdi:office-building" width="24" height="24" />
                 </span>
                 <span>University of Lagos</span>
               </span>
+              
             </div>
 
             <div className='time centralize'>

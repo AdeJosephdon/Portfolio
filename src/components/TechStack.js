@@ -11,7 +11,7 @@ function TechStack() {
   return (
     <PageStructure>
 
-    <main className="home">
+    <main className="tech-stack-main">
       
       <div className='tech techstack-container'>
         <h1>My Tech Stack</h1>

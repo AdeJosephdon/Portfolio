@@ -32,6 +32,7 @@ const PortfolioData =
        "/Screenshot 2025-02-17 175554.png"
     ],
     "tech_stack": ["JavaScript", "CSS", "HTML", "D3.js", "MathJax"],
+    "concepts_practised": ["useState", "useRef", "Api", "And so much more"],
     "live_preview": "https://adejosephdon2.github.io/Dontests-for-hosting/",
     "view_code": "https://github.com/AdeJosephdon/eCommerce.git"
   },
@@ -47,6 +48,7 @@ const PortfolioData =
        "/Screenshot 2025-02-17 175554.png"
     ],
     "tech_stack": ["React", "CSS", "HTML"],
+    "concepts_practised": ["useState", "useRef", "Api", "And so much more"],
     "live_preview": "https://adejosephdon2.github.io/Dontests-for-hosting/",
     "view_code": "https://github.com/AdeJosephdon/eCommerce.git"
   },
@@ -62,6 +64,7 @@ const PortfolioData =
        "/Screenshot 2025-02-17 175554.png"
     ],
     "tech_stack": ["React", "CSS", "HTML"],
+    "concepts_practised": ["useState", "useRef", "Api", "And so much more"],
     "live_preview": "https://adejosephdon2.github.io/Dontests-for-hosting/",
     "view_code": "https://github.com/AdeJosephdon/eCommerce.git"
   }

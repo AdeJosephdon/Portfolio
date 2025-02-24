@@ -21,7 +21,8 @@ function IndividualProject(prop) {
                   </div>
       
                   <div className='project-description'>
-                    {prop.small_description}
+                    This is sample project description random things are here in description This is sample project lorem ipsum generator for dummy content
+                    {/* {prop.small_description} */}
                   </div>
       
                   <div className='project-tech-stack'>

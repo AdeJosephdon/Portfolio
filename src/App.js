@@ -7,13 +7,21 @@ import About from './components/About';
 import Projects from './components/Projects';
 import TechStack from './components/TechStack';
 import IndividualProjectDescription from './components/IndividualProjectDescription';
+import { useState } from 'react';
 
 
 function App() {
 
+    const [isDark, setIsDark] = useState(false)
+
+    function colorMode() {
+      setIsDark(prevmode => !prevmode)
+    }
+
+
     const router = createBrowserRouter([
     {path: '/',
-    element: <Home /> ,
+    element: <Home isDark={isDark} colorMode={colorMode}/> ,
     errorElement: <NotFoundPage />
     },
     {path: '/contact',
@@ -33,7 +41,7 @@ function App() {
     }
   ])
   return (
-    <div className="App">
+    <div className="App" dark-theme={isDark ? "dark" : "light"}>
       <RouterProvider router={router} />
     </div>
   );
