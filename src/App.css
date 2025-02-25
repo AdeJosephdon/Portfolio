@@ -779,6 +779,9 @@ transform: scale(1.05);
       color: var(--grey-color);
       text-decoration: none;
     }
+    .picture-container {
+      padding: 0;
+    }
     .techstack-container h3 {
       font-size: 1.6rem;
     }
@@ -894,7 +897,7 @@ transform: scale(1.05);
     }
 
     .contact p a {
-      font-size: 2rem;
+      font-size: 1.6rem;
     }
     .item-properties {
       display: grid;
