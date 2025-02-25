@@ -1,9 +1,11 @@
-import { useRef } from 'react';
+import { useRef, useState } from 'react';
 import { Icon } from '@iconify/react/dist/iconify.js';
 import { Link } from 'react-router-dom';
 
 function Header() {
   // console.log(prop)
+
+  const [navShown, setNavShown] = useState(false)
 
   const navRef = useRef();
 
@@ -11,7 +13,15 @@ function Header() {
 		navRef.current.classList.toggle(
 			"responsive_nav"
 		);
+
+    if (navRef.current && navRef.current.classList.contains("responsive_nav")) {
+      setNavShown(true)
+    } else {
+        setNavShown(false)
+    }
 	};
+
+
 
   return (
     <div className="header">
@@ -22,28 +32,33 @@ function Header() {
 
           <button className='nav-socials-icon'
           onClick={showNavbar}
+          aria-hidden={navShown ? "true" : "false"}
+          tabindex={navShown ? "-1" : "0"}
+          aria-label="Open Nav or Menu Bar"
           ><Icon icon="fluent:navigation-24-filled" width="24" height="24" />
           </button>
 
-        <div ref={navRef} className='hero-navvy responsive_nav'>
+        <div ref={navRef} className='hero-navvy responsive_nav'
+        role={navShown ? "menu" : ""}
+        >
         <nav className='hero-navigation'>
-          <Link to="/"> Home </Link>
-          <Link to="/about"> About </Link> 
-          <Link to="/techstack"> Tech Stack </Link>
-          <Link to="/projects"> Projects </Link>
-          <Link to="/contact"> Contact </Link>
+          <Link to="/" role={navShown ? "menuitem" : ""} aria-label="View Home page"> Home </Link>
+          <Link to="/about" role={navShown ? "menuitem" : ""} aria-label="View About page"> About </Link> 
+          <Link to="/techstack" role={navShown ? "menuitem" : ""} aria-label="View Tech Stack page"> Tech Stack </Link>
+          <Link to="/projects" role={navShown ? "menuitem" : ""} aria-label="View Projects page"> Projects </Link>
+          <Link to="/contact" role={navShown ? "menuitem" : ""} aria-label="View Contact page"> Contact </Link>
         </nav>
 
 
           
         <div className='navigation-icons'>
-          <a href='www.google.com' target="_blank" rel='noreferrer'>
+          <a href='www.google.com' target="_blank" rel='noreferrer'role={navShown ? "menuitem" : ""}  aria-label="View Github Page">
             <Icon icon="ri:github-fill" width="30" height="30" />
           </a>
-          <a href='www.google.com' target="_blank" rel='noreferrer'>
+          <a href='www.google.com' target="_blank" rel='noreferrer' role={navShown ? "menuitem" : ""} aria-label="View Twitter / X Page">
             <Icon icon="formkit:twitter" width="30" height="30" />
           </a>
-          <a href='www.google.com' target="_blank" rel='noreferrer'>
+          <a href='www.google.com' target="_blank" rel='noreferrer' role={navShown ? "menuitem" : ""} aria-label="View Linkedin Page">
             <Icon icon="entypo-social:linkedin-with-circle" width="30" height="30" />
           </a>
         </div>
@@ -51,6 +66,8 @@ function Header() {
         <div className='nav-button-container'>
         <button className='nav-socials-icon close-nav'
           onClick={showNavbar}
+          tabindex={navShown ? "0" : "-1"}
+          aria-label="Close Nav or Menu Bar"
           >
             <Icon icon="proicons:filter-cancel" width="24" height="24" />
         </button>

@@ -1,4 +1,4 @@
-import React, { createContext} from "react";
+import { useState, createContext} from "react";
 
 import PortfolioData from "./PortfolioData"
 
@@ -8,11 +8,19 @@ function DataProvider({ children }) {
 
   const data = PortfolioData
 
+  const [isDark, setIsDark] = useState(false)
+
+  function colorMode() {
+    setIsDark(prevmode => !prevmode)
+  }
+
 
   return (
     <DataContext.Provider
             value={{
-                data
+                data,
+                isDark,
+                colorMode
             }}
         >
             {children}

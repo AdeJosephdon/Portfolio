@@ -18,12 +18,13 @@ function TechStack() {
         <h3> Technologies I've been working with recently</h3>
 
         <div className='tech-container technologies-container'> 
-          <button className='technology'><Icon icon="devicon:html5-wordmark" width="60" height="60" /></button >
-          <button className='technology'><Icon icon="devicon:css3-wordmark" width="60" height="60" /></button>
-          <button className='technology'><Icon icon="devicon:javascript" width="60" height="60" /></button>
-          <button className='technology'><Icon icon="devicon:react-wordmark" width="60" height="60" /></button>
-          <button className='technology'><Icon icon="devicon:d3js" width="60" height="60" /></button>
-          <button className='technology'><Icon icon="file-icons:mathjax" width="60" height="60" /></button>
+          <button className='technology' aria-label="View all my HTML projects"><Icon icon="devicon:html5-wordmark" width="60" height="60" /></button >
+          <button className='technology' aria-label="View all my CSS projects"><Icon icon="devicon:css3-wordmark" width="60" height="60" /></button>
+          <button className='technology' aria-label="View all my JavaScript projects"><Icon icon="devicon:javascript" width="60" height="60" /></button>
+          <button className='technology' aria-label="View all my React projects"><Icon icon="devicon:react-wordmark" width="60" height="60" /></button>
+          <button className='technology' aria-label="View all my D3.js projects"><Icon icon="devicon:d3js" width="60" height="60" /></button>
+          <button className='technology mathjax' aria-label="View all my Mathjax projects"><Icon icon="file-icons:mathjax" width="60" height="60" /></button>
+
 
         </div>
       </div>

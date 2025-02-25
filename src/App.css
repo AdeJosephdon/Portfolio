@@ -1,6 +1,5 @@
 body{
   font-family: Poppins;
-  background: #000000; 
 }
 html{
   font-size: 62.5%;
@@ -111,7 +110,7 @@ a {
   color: var(--grey-color);
 }
 main {
-  margin: 20px 140px;
+  margin: 20px 140px 0 140px;
 }
 
 /* .home {
@@ -392,7 +391,8 @@ transform: scale(1.05);
   color: transparent;
 }
 .about{
-  margin-bottom: 100px;
+  /* margin-bottom: 100px; */
+  padding-bottom: 100px;
 }
 .about h1{
   color: var(--light-purple);
@@ -412,9 +412,11 @@ transform: scale(1.05);
   padding: 15px 0;
   border-bottom: var(--ash-color) 2px solid;
 }
-  .education {
-    width: 55%;
-  }
+
+.education-container {
+  width: 55%;
+}
+
 .title-and-position {
   display: flex;
   justify-content: space-between;
@@ -454,7 +456,7 @@ transform: scale(1.05);
   gap: 10px;
 }
 .contact {
-  padding: 100px 0;
+  padding: 100px 0 230px 0;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -486,7 +488,8 @@ transform: scale(1.05);
 
 .tech-container {
   width: 100%;
-  margin: inherit auto;
+  margin: 40px auto 400px auto;
+
 }
 
 /* Individual Item Description */
@@ -628,6 +631,28 @@ transform: scale(1.05);
   color: var(--black-color);
 }
 
+/* Dark page */
+.error-container {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+  padding: 150px 0;
+}
+.error-text {
+  font-size: 5.2rem;
+  font-weight: 700;
+  color: var(--contact-font-color);
+  padding: 0;
+  margin: 0;
+}
+.error-smaller-text {
+  font-size: 2.6rem;
+  font-weight: 500;
+  color: var(--contact-font-color);
+}
 
 /* Dark Theme */
 [dark-theme="dark"] {
@@ -736,7 +761,7 @@ transform: scale(1.05);
       text-align: center;
     }
     main {
-      margin: 10px 10px;
+      margin: 10px 10px 0 10px;
     }
     .hero-section {
       padding: 50px 0;
@@ -770,7 +795,7 @@ transform: scale(1.05);
       display: flex;
       /* justify-content: space-between; */
       align-items: flex-start;
-      gap: 10px;
+      gap: 20px;
       flex-wrap: nowrap;
       overflow-x: auto;
     }
@@ -828,8 +853,11 @@ transform: scale(1.05);
       padding: 15px 10px;
       border-bottom: var(--ash-color) 2px solid;
     }
-    .education {
+    .education-container {
       width: 100%;
+      /* border-bottom: var(--ash-color) 2px solid; */
+    }
+    .education {
       padding: 0 10px 15px 10px;
       /* border-bottom: var(--ash-color) 2px solid; */
     }
@@ -892,6 +920,15 @@ transform: scale(1.05);
       /* position: fixed; */
       bottom: 40px;
       right: 20px;
+    }
+    .error-text {
+      font-size: 2.6rem;
+      font-weight: 700;
+    }
+
+    .error-smaller-text {
+      font-size: 1.3rem;
+      font-weight: 500;
     }
 }
 

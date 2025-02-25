@@ -3,11 +3,12 @@ import { useContext } from "react";
 import { DataContext } from "./DataContext";
 import PageStructure from './PageStructure';
 import IndividualProject from './Individual Project';
+import HeroSection from './HeroSection';
 
 
-function Home({isDark, colorMode}) {
+function Home() {
 
-    const { data } = useContext(DataContext);
+    const { data ,isDark , colorMode} = useContext(DataContext);
     
 
     const projectsMapped = data.slice(0,3).map((project) => (
@@ -29,33 +30,20 @@ function Home({isDark, colorMode}) {
     <PageStructure>
 
     <main className="home">
-      <div className='hero-section'> 
-      <div className='hero-introduction'>
-        <div>Hi 👋,</div>
-        <div>My name is </div>
-        <div className='josephdon-name'>Adegboyega Joseph</div>
-        <div>I'm in love with <span className='josephdon-name'>JavaScript</span></div>
-      </div>
 
-      <div className='picture-container'>
-<img src='/portfolio picture.jpg' alt='Josephdon'/>
-      </div>
-      
-
-
-      </div>
+    <HeroSection />
 
       <div className='techstack-container'>
         <h1>My Tech Stack</h1>
         <h3> Technologies I've been working with recently</h3>
 
         <div className='technologies-container'> 
-          <button className='technology'><Icon icon="devicon:html5-wordmark" width="60" height="60" /></button >
-          <button className='technology'><Icon icon="devicon:css3-wordmark" width="60" height="60" /></button>
-          <button className='technology'><Icon icon="devicon:javascript" width="60" height="60" /></button>
-          <button className='technology'><Icon icon="devicon:react-wordmark" width="60" height="60" /></button>
-          <button className='technology'><Icon icon="devicon:d3js" width="60" height="60" /></button>
-          <button className='technology mathjax'><Icon icon="file-icons:mathjax" width="60" height="60" /></button>
+          <button className='technology' aria-label="View all my HTML projects"><Icon icon="devicon:html5-wordmark" width="60" height="60" /></button >
+          <button className='technology' aria-label="View all my CSS projects"><Icon icon="devicon:css3-wordmark" width="60" height="60" /></button>
+          <button className='technology' aria-label="View all my JavaScript projects"><Icon icon="devicon:javascript" width="60" height="60" /></button>
+          <button className='technology' aria-label="View all my React projects"><Icon icon="devicon:react-wordmark" width="60" height="60" /></button>
+          <button className='technology' aria-label="View all my D3.js projects"><Icon icon="devicon:d3js" width="60" height="60" /></button>
+          <button className='technology mathjax' aria-label="View all my Mathjax projects"><Icon icon="file-icons:mathjax" width="60" height="60" /></button>
 
         </div>
       </div>
@@ -69,13 +57,20 @@ function Home({isDark, colorMode}) {
         </div>
       </div>
 
-      <button className='day-night-switch' onClick={colorMode}>
+      <button className='day-night-switch' onClick={colorMode} 
+      aria-label=
+      {isDark ? 
+        "Switch to Light Mode" :
+        "Switch to Dark Mode" 
+      } 
+      >
 
         {isDark ? 
 <Icon icon="meteocons:clear-day-fill" width="24" height="24" />
 :
 <Icon icon="game-icons:night-sky" width="24" height="24" />}
       </button>
+
 
 
     </main>

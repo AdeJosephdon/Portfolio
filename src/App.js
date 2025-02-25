@@ -1,4 +1,6 @@
 import './App.css';
+import { useContext } from "react";
+import { DataContext } from "./components/DataContext";
 import { createBrowserRouter, RouterProvider } from 'react-router-dom'
 import Home from './components/Home';
 import NotFoundPage from './components/NotFoundPage';
@@ -7,21 +9,16 @@ import About from './components/About';
 import Projects from './components/Projects';
 import TechStack from './components/TechStack';
 import IndividualProjectDescription from './components/IndividualProjectDescription';
-import { useState } from 'react';
 
 
 function App() {
 
-    const [isDark, setIsDark] = useState(false)
-
-    function colorMode() {
-      setIsDark(prevmode => !prevmode)
-    }
+  const { isDark } = useContext(DataContext);
 
 
     const router = createBrowserRouter([
     {path: '/',
-    element: <Home isDark={isDark} colorMode={colorMode}/> ,
+    element: <Home /> ,
     errorElement: <NotFoundPage />
     },
     {path: '/contact',

@@ -104,7 +104,9 @@ function About() {
 
       <h1>Education</h1>
 
-        <div className='education'>
+        <div className='education-container'>
+          <div className='education'>
+
           <div className='title-and-position'>
             <div className='title'>
               BSc in Petroleum and Gas Engineering.
@@ -138,6 +140,8 @@ function About() {
               </span>
               <span>Jan 2018 - Jan 2025</span>
             </div>
+
+          </div>
 
           </div>
 

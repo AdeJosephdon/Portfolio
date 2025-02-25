@@ -10,14 +10,20 @@ function NotFoundPage() {
   return (
     <PageStructure>
 
-    <main className="home">
+    <main className="error-page">
         <div className="error-container"> 
         <p className="error-text">404 Not Found </p>
-        <div>Your visited page not found. You may go home page. </div>
+        <div className="error-smaller-text">Your visited page not found. You may go home page. </div>
 
-        <button>
-            <Link to="/">Back to home page </Link>
+
+        <Link to="/" >
+        <button className="individual-item-code-button"
+        aria-label="Go Back TO Home Page"
+        >
+            Back to home page 
         </button>
+        </Link>
+
 
         </div>
     </main>

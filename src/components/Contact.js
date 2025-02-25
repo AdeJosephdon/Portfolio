@@ -12,7 +12,9 @@ function Contact() {
 
     <main className="contact">
       <p>Please mail me @:</p>
-      <p><a href="mailto:adegboyegajosephdon@gmail.com">adegboyegajosephdon@gmail.com</a></p>
+      <p><a href="mailto:adegboyegajosephdon@gmail.com"
+      aria-label="Send an email to adegboyegajosephdon@gmail.com"
+      >adegboyegajosephdon@gmail.com</a></p>
 
     </main>
     </PageStructure> 
