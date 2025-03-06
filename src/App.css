@@ -259,7 +259,7 @@ main {
   margin: 0;
   padding: 0;
 }
-.projects-outer-container p {
+.projects-outer-container > p {
   font-size: 2.2rem;
   text-align: center;
   font-weight: 400;
@@ -304,7 +304,7 @@ main {
   margin: 10px 0;
   padding: 0;
 }
-.projects p {
+.projects > p {
   font-size: 2.2rem;
   font-weight: 400;
   color: var(--grey-color);
@@ -866,7 +866,7 @@ transform: scale(1.05);
     .projects-outer-container h3 {
       font-size: 1.6rem;
     }
-    .projects-outer-container p {
+    .projects-outer-container > p {
       font-size: 1.6rem;
     }
     .projects-container {
