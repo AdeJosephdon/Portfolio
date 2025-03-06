@@ -14,7 +14,7 @@ function IndividualProject(prop) {
         
         <div className='individual-project-div'>
             <div className='project-image-container'>
-                  <img src={prop.image} alt={prop.title} loading="lazy"
+                  <img src={prop.image} alt={prop.title} 
                   />
                   </div>
       
