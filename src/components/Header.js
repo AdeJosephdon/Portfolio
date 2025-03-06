@@ -52,13 +52,13 @@ function Header() {
 
           
         <div className='navigation-icons'>
-          <a href='www.google.com' target="_blank" rel='noreferrer'role={navShown ? "menuitem" : ""}  aria-label="View Github Page">
+          <a href='https://github.com/AdeJosephdon' target="_blank" rel='noreferrer'role={navShown ? "menuitem" : ""}  aria-label="View Github Page">
             <Icon icon="ri:github-fill" width="30" height="30" />
           </a>
-          <a href='www.google.com' target="_blank" rel='noreferrer' role={navShown ? "menuitem" : ""} aria-label="View Twitter / X Page">
-            <Icon icon="formkit:twitter" width="30" height="30" />
+          <a href='https://wa.me/qr/XEJKCWVKZV3BL1' target="_blank" rel='noreferrer' role={navShown ? "menuitem" : ""} aria-label="Message me on Whatsapp">
+            <Icon icon="ic:sharp-whatsapp" width="30" height="30" />
           </a>
-          <a href='www.google.com' target="_blank" rel='noreferrer' role={navShown ? "menuitem" : ""} aria-label="View Linkedin Page">
+          <a href='https://www.linkedin.com/in/adegboyega-joseph-444b36164?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app' target="_blank" rel='noreferrer' role={navShown ? "menuitem" : ""} aria-label="View Linkedin Page">
             <Icon icon="entypo-social:linkedin-with-circle" width="30" height="30" />
           </a>
         </div>

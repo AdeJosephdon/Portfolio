@@ -31,6 +31,7 @@ function Projects() {
 
       <h1>My Projects</h1>
       <h3> Things I've built so far</h3>
+      <p> Click on the project to see a more detailed description of each project.</p>
 
       <div className='projects-container projects-page-container '> 
 

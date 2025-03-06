@@ -66,7 +66,7 @@ function IndividualProjectDescription() {
             <h2 className="item-description-title"><a href={randomItem.live_preview} target="_blank" rel="noreferrer" aria-label={`Go to my ${randomItem.title} live Web Application`}> {randomItem.title} </a></h2>
 
             <div>
-              {randomItem.large_description}
+              {randomItem.small_description}
             </div>
 
           </div>
@@ -78,7 +78,7 @@ function IndividualProjectDescription() {
         <section className="other-comments">
               
               <p>
-            With this project I was able to practice concepsts like:
+                {randomItem.long_description}
 
               </p>
 
@@ -88,8 +88,8 @@ function IndividualProjectDescription() {
                 
               )}
               <li>and so much more.</li>
-              <li ><a href={randomItem.live_preview} target="_blank" rel="noreferrer" className="project-body-link" aria-label={`Go to my ${randomItem.title} live Web Application`}>Check the live preview here.</a> </li>
-              <li><a href={randomItem.view_code} target="_blank" rel="noreferrer" className="project-body-link" aria-label={`Go to my ${randomItem.title} Github source code here.`}>Check the source code here.</a> </li>
+              <li ><a href={randomItem.live_preview} target="_blank" rel="noreferrer" className="project-body-link" aria-label={`Go to my ${randomItem.title} live Web Application`}>Check the <button className="links-in-concepts">live preview </button> here.</a> </li>
+              <li><a href={randomItem.view_code} target="_blank" rel="noreferrer" className="project-body-link" aria-label={`Go to my ${randomItem.title} Github source code here.`}>Check the <button className="links-in-concepts">source code </button>here.</a> </li>
             </ul>
 
         </section>
