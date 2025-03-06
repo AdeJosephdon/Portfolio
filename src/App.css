@@ -180,6 +180,7 @@ main {
   color: var(--light-purple);
   margin: 0;
   padding: 0;
+  text-align: center;
 }
 .techstack-container h3{
   font-size: 3.2rem;
@@ -766,6 +767,7 @@ transform: scale(1.05);
       background: var(--mobile-nav-bg);
       border-radius: 5px;
       box-shadow: -5px 4px 15px rgb(110, 32, 95);
+      z-index: 1000;
     }
     .hero-navigation {
       width: 100%;
@@ -1012,6 +1014,9 @@ transform: scale(1.05);
     .error-smaller-text {
       font-size: 1.3rem;
       font-weight: 500;
+    }
+    .individual-item-code-button {
+      width: 90%;
     }
 }
 
