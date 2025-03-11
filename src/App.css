@@ -252,6 +252,13 @@ main {
   margin: 0;
   padding: 0;
 }
+.projects-outer-container h1 a{
+  font-size: 4.8rem;
+  font-weight: 700;
+  color: var(--light-purple);
+  margin: 0;
+  padding: 0;
+}
 
 .projects-outer-container h3 {
   font-size: 3.2rem;

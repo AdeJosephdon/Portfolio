@@ -78,7 +78,7 @@ const PortfolioData =
         "Learnt and Implemented Mathjax.js for writing  the mathematical euations",
         "Designed the site to be fully responsive across both mobile and desktop devices.",
         "Developed a UI/UX design from my own imagination.",
-        "Deepened my understanding of Git and GitHub for version control, learning how to create, manage, and push branches, resolve push errors, protect API keys using .env, reset a Git repository, and start fresh while following best practices in a React project.",
+        "Deepened my understanding of Git and GitHub for version control, learning how to create, manage, and push branches, resolve push errors, protect API keys using .env, reset a Git repository, and start fresh while following best practices",
         "By building this Dontests, I strengthened my frontend development skills while demonstrating my ability to create well-structured, maintainable, and user-friendly web applications."
       ],
     "live_preview": "https://dontests.vercel.app/",
@@ -101,8 +101,7 @@ const PortfolioData =
         "The web application processes three different types of files xlsx, csv and xls so I had to develop for them.",
         "Designed the site to be fully responsive across both mobile and desktop devices.",
         "Developed a UI/UX design from my own imagination.",
-        "Deepened my understanding of Git and GitHub for version control, learning how to create, manage, and push branches, resolve push errors, protect API keys using .env, reset a Git repository, and start fresh while following best practices in a React project.",
-        "By building this Dontests, I strengthened my frontend development skills while demonstrating my ability to create well-structured, maintainable, and user-friendly web applications."
+        "Asynchronous JavaScript and APIs (AJAX/Fetch)", "DOM Manipulation","Promises and Async/Await", "Data Structures (Arrays, Functions and Objects)", "Dynamic UI updates"
       ],
     "live_preview": "https://question-bank-rouge.vercel.app/",
     "view_code": "https://github.com/AdeJosephdon/Question-Bank"

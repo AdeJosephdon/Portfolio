@@ -81,9 +81,9 @@ function techClicked(tech) {
       </div>
 
       <div className='projects-outer-container'>
-        <h1>My Projects</h1>
+        <h1><Link to={"/projects"}>My Projects</Link></h1>
         <h3> Things I've built so far (According to recency).</h3>
-        <p> Click on the project to see a more detailed description of each project.</p>
+        <p> Project details available upon click.</p>
 
         <div className='projects-container'> 
           {projectsMapped}
