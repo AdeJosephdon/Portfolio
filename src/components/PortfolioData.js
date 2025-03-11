@@ -15,6 +15,7 @@ const PortfolioData =
     "tech_stack": ["React", "CSS", "HTML", "Github", "Figma"],
     "concepts_practised": [
         "Dynamic navigation using React Router, Page structure, useContext() for a seamless browsing experience.",
+        "Recreation of Figma design: (https://www.figma.com/design/Su9RVJZDbtwG3PZ7VBFB1m/Developer-Portfolio-Design-(Community)?node-id=1-4&t=2B6Ss4aROUXRPNaq-0)",
         "Designed the site to be fully responsive across both mobile and desktop devices.",
         "Followed accessibility best practices by implementing structured and semantic HTML to enhance usability for all users.",
         "Recreated a UI/UX design with attention to detail.",
@@ -44,6 +45,7 @@ const PortfolioData =
     "tech_stack": ["React", "CSS", "HTML", "Github", "Figma"],
     "concepts_practised": [
         "Implementation of AI chatbot",
+        "Recreation of Figma design: (https://www.figma.com/design/noB6Ao9cDlRHCNbJiZgNWP/Full-E-Commerce-Website-UI-UX-Design-(Community)?node-id=1-3&p=f&t=10m0lgK9jcLG9kXW-0)",
         "Integrated APIs for dynamic data fetching and interaction.",
         "Dynamic navigation using React Router, Page structure, useContext() for a seamless browsing experience.",
         "Recreated a UI/UX design with attention to detail.",
@@ -52,7 +54,7 @@ const PortfolioData =
         "Utilized useRef for handling references within components.",
         "By building this e-commerce platform, I strengthened my frontend development skills while demonstrating my ability to create well-structured, maintainable, and user-friendly web applications."
       ],
-    "live_preview": "https://e-commerce-5ezno5r3q-adejosephdons-projects.vercel.app/",
+    "live_preview": "https://e-commerce-six-mauve.vercel.app/",
     "view_code": "https://github.com/AdeJosephdon/eCommerce"
   },
   {
