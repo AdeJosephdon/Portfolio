@@ -1,7 +1,7 @@
 import { useContext, useState } from "react";
-import { DataContext } from "./DataContext";
+import { DataContext } from "../components/DataContext";
 import { Icon } from '@iconify/react/dist/iconify.js';
-import PageStructure from './PageStructure';
+import PageStructure from '../components/PageStructure';
 import { Link } from 'react-router-dom';
 
 

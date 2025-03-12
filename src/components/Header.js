@@ -1,6 +1,8 @@
 import { useRef, useState } from 'react';
 import { Icon } from '@iconify/react/dist/iconify.js';
 import { Link } from 'react-router-dom';
+import "./../styles/Header.css"
+
 
 function Header() {
   // console.log(prop)

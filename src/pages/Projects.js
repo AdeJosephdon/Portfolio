@@ -1,7 +1,7 @@
-import PageStructure from './PageStructure';
+import PageStructure from '../components/PageStructure';
 import { useContext } from "react";
-import { DataContext } from "./DataContext";
-import IndividualProject from './Individual Project';
+import { DataContext } from "../components/DataContext";
+import IndividualProject from '../components/Individual Project';
 
 
 function Projects() {

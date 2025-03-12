@@ -1,7 +1,7 @@
 import { useState, useContext } from "react";
-import { DataContext } from "./DataContext";
+import { DataContext } from "../components/DataContext";
 import { Link, useParams } from 'react-router-dom';
-import PageStructure from './PageStructure';
+import PageStructure from '../components/PageStructure';
 
 
 function IndividualProjectDescription() {

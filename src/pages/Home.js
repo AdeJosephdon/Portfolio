@@ -1,9 +1,9 @@
 import { Icon } from '@iconify/react/dist/iconify.js';
 import { useContext, useState } from "react";
-import { DataContext } from "./DataContext";
-import PageStructure from './PageStructure';
-import IndividualProject from './Individual Project';
-import HeroSection from './HeroSection';
+import { DataContext } from "../components/DataContext";
+import PageStructure from '../components/PageStructure';
+import IndividualProject from '../components/Individual Project';
+import HeroSection from '../components/HeroSection';
 import { Link } from 'react-router-dom';
 
 
@@ -26,9 +26,9 @@ function techClicked(tech) {
 
 // setTechActive(prevTech => !prevTech);
 
-  const filteredItems = data.filter(item => item.tech_stack && item.tech_stack.includes(currentTech));
+  const projectsBasedOnTech = data.filter(item => item.tech_stack && item.tech_stack.includes(currentTech));
 
-  const listItems = filteredItems.map(item => (
+  const listItems = projectsBasedOnTech.map(item => (
     <li key={item.id}><Link to={`/individualprojectdescription/${item.id}`}>{item.title}</Link></li>
   ));
 

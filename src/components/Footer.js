@@ -1,7 +1,7 @@
-// import logo from './Vector.png';
-// import HeroSection from './HeroSect';
 import { Icon } from '@iconify/react/dist/iconify.js';
 import { Link } from 'react-router-dom';
+import "./../styles/Footer.css"
+
 
 function Footer() {
 

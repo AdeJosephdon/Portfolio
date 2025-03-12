@@ -2,13 +2,13 @@ import './App.css';
 import { useContext } from "react";
 import { DataContext } from "./components/DataContext";
 import { createBrowserRouter, RouterProvider } from 'react-router-dom'
-import Home from './components/Home';
-import NotFoundPage from './components/NotFoundPage';
-import Contact from './components/Contact';
-import About from './components/About';
-import Projects from './components/Projects';
-import TechStack from './components/TechStack';
-import IndividualProjectDescription from './components/IndividualProjectDescription';
+import Home from './pages/Home';
+import NotFoundPage from './pages/NotFoundPage';
+import Contact from './pages/Contact';
+import About from './pages/About';
+import Projects from './pages/Projects';
+import TechStack from './pages/TechStack';
+import IndividualProjectDescription from './pages/IndividualProjectDescription';
 
 
 function App() {

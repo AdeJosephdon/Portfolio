@@ -1,3 +1,6 @@
+import "./../styles/HeroSection.css"
+
+
 function HeroSection() {
   return (
       <div className='hero-section'> 

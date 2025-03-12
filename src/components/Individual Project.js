@@ -13,7 +13,7 @@ function IndividualProject(prop) {
         <Link to={`/individualprojectdescription/${prop.id}`}>
         
         <div className='individual-project-div'>
-            <div className='project-image-container'>
+                  <div className='project-image-container'>
                   <img src={prop.image} alt={prop.title} 
                   />
                   </div>
