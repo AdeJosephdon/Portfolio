@@ -9,14 +9,18 @@ function TypeWriter(prop) {
   });
 
   return (
-    <>
+    
       <span
-        className='josephdon-name'
+
       >
-        {[text]} {/* This is the crucial part - rendering the 'text' */}
+        <span className='typewriter'>{[text]}</span>
+         
+      
+      
+      <span><Cursor /></span>
+      
+      {/* <Cursor /> */}
       </span>
-      <Cursor />
-    </>
   );
 }
 

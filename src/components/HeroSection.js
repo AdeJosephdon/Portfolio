@@ -8,7 +8,7 @@ function HeroSection() {
         <div>Hi 👋,</div>
         <div>My name is </div>
         <div className='josephdon-name'>Adegboyega Joseph</div>
-        <div>I'm in love with <TypeWriter /></div>
+        <div >I'm in love with <TypeWriter /></div>
       </div>
 
       <div className='picture-container'>
