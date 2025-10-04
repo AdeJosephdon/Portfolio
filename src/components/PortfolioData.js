@@ -1,6 +1,46 @@
 const PortfolioData = [
   {
     id: 1,
+    title: "Protask Dashboard",
+    image: "/protask-dashboard 1.png",
+    small_description:
+      "A full-featured productivity dashboard built with React, RESTful APIs, CI/CD pipelines, testing, and state management. Includes task CRUD, charts, dark mode, responsive design, and Figma-based UI/UX.",
+    long_description:
+      "ProTask is a personal project showcasing my ability to build end-to-end, production-ready applications with React. It functions as a productivity dashboard that helps users manage tasks, track progress, and gain insights through charts and statistics. Beyond frontend development, this project demonstrates API integration, CI/CD pipelines, automated testing, and design-to-code implementation from Figma. It highlights my skills in modern frontend engineering practices, collaboration workflows, and professional deployment pipelines.",
+    description_images: [
+      "/protask-dashboard 1.png",
+      "/protask-dashboard 2.png",
+      "/protask-dashboard 3.png",
+    ],
+    tech_stack: [
+      "React",
+      "JavaScript",
+      "Axios",
+      "CSS",
+      "HTML",
+      "Figma",
+      "Github Actions (CI/CD)",
+      "RESTful API",
+      "Jest",
+      "React Testing Library",
+    ],
+    concepts_practised: [
+      "Implemented full CRUD operations (Create, Read, Update, Delete) for task management.",
+      "Integrated RESTful APIs to persist and retrieve task data.",
+      "Set up CI/CD pipelines with GitHub Actions for automated builds, tests, and deployments.",
+      "Practiced frontend testing with Jest and React Testing Library for unit and integration tests.",
+      "Applied state management using React Context API and hooks (useState, useEffect, useContext).",
+      "Designed and implemented dark mode and light mode for better accessibility.",
+      "Visualized task completion and productivity trends with Recharts.",
+      "Recreated a Figma design for a modern, consistent UI/UX. (https://www.figma.com/design/W0WJAUkSBzgMI9zYrIJ94S/Task-Manager-webDesign--Community-?node-id=1-2711&m=draw)" ,
+      "Followed semantic HTML, accessibility best practices, and responsive design principles.",
+      "Practiced Git and GitHub workflows including branching, commits, version control, and protected environments.",
+    ],
+    live_preview: "https://protask-dashboard.vercel.app/",
+    view_code: "https://github.com/AdeJosephdon/protask-dashboard",
+  },
+  {
+    id: 2,
     title: "E-Commerce Platform",
     image: "/Ecommerce 1.png",
     small_description:
@@ -34,11 +74,11 @@ const PortfolioData = [
       "Applied Git and GitHub best practices: branch creation, API key protection with .env, repo reset, and project version control.",
       "Built the application with a focus on accessibility, responsiveness, and performance.",
     ],
-    live_preview: "https://ecommerce-bvsy.onrender.com/",
+    live_preview: "https://e-commerce-six-tau-65.vercel.app/",
     view_code: "https://github.com/AdeJosephdon/eCommerce",
   },
   {
-    id: 2,
+    id: 3,
     title: "Dontests",
     image: "/DonTests slide 1.png",
     small_description:
@@ -66,7 +106,7 @@ const PortfolioData = [
     view_code: "https://github.com/AdeJosephdon/DonTests",
   },
   {
-    id: 3,
+    id: 4,
     title: "Portfolio",
     image: "/Portfolio Slide 3.png",
     small_description:
@@ -89,15 +129,13 @@ const PortfolioData = [
       "Deepened my understanding of Git and GitHub for version control, learning how to create, manage, and push branches, resolve push errors, protect API keys using .env, reset a Git repository, and start fresh while following best practices in a React project.",
       "Explored and applied useState for state management.",
       "Utilized useRef for handling references within components.",
-      // "Integrated APIs for dynamic data fetching and interaction.",
-      // "And so much more.",
       "By building this portfolio, I strengthened my frontend development skills while demonstrating my ability to create well-structured, maintainable, and user-friendly web applications.",
     ],
     live_preview: "https://josephdonportfolio.vercel.app/",
     view_code: "https://github.com/AdeJosephdon/Portfolio",
   },
   {
-    id: 4,
+    id: 5,
     title: "Question and Answer",
     image: "/Q and A 3.png",
     small_description:
@@ -120,7 +158,7 @@ const PortfolioData = [
     view_code: "https://github.com/AdeJosephdon/Question-Bank",
   },
   {
-    id: 5,
+    id: 6,
     title: "Chef Claude",
     image: "/Chef Claude 2.png",
     small_description:
@@ -138,7 +176,7 @@ const PortfolioData = [
     view_code: "https://github.com/AdeJosephdon/chefClaude",
   },
   {
-    id: 6,
+    id: 7,
     title: "Image-Search-App",
     image: "/Image Search 2.png",
     small_description:
@@ -163,7 +201,7 @@ const PortfolioData = [
     view_code: "https://github.com/AdeJosephdon/Image-Search-App",
   },
   {
-    id: 7,
+    id: 8,
     title: "Assembly: Endgame",
     image: "/Assembly 1.png",
     small_description:
@@ -181,7 +219,7 @@ const PortfolioData = [
     view_code: "https://github.com/AdeJosephdon/Assembly-Endgame",
   },
   {
-    id: 8,
+    id: 9,
     title: "Scientific-calculator",
     image: "/Calculator 2.png",
     small_description:
@@ -205,7 +243,7 @@ const PortfolioData = [
     view_code: "https://github.com/AdeJosephdon/Scientific-calculator",
   },
   {
-    id: 9,
+    id: 10,
     title: "Tenzis-game",
     image: "/Tenzis 1.png",
     small_description:
@@ -219,7 +257,7 @@ const PortfolioData = [
     view_code: "https://github.com/AdeJosephdon/Tenzis-game",
   },
   {
-    id: 10,
+    id: 11,
     title: "Product Store",
     image: "/Product Store 3.png",
     small_description: "A full-stack application applying CRUD principles.",
@@ -238,6 +276,7 @@ const PortfolioData = [
       "Node",
       "MongoDB",
       "Express",
+      "Axios",
     ],
     concepts_practised: [
       "Frontend-Backend connection",
@@ -248,9 +287,10 @@ const PortfolioData = [
       "CRUD Operations",
       "Debugging and Error Handling",
       "Modeling Data with Mongoose",
+      "Axios",
     ],
     live_preview: "https://mern-course-aykc.onrender.com/",
-    view_code: "https://github.com/AdeJosephdon/Tenzis-game",
+    view_code: "https://github.com/AdeJosephdon/mern-course/",
   },
 ];
 

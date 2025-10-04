@@ -57,7 +57,7 @@ function Home() {
 
         <div className="techstack-container">
           <h1>My Tech Stack</h1>
-          <h3> Technologies I've been working with recently</h3>
+          <h3> Technologies I've worked with recently:</h3>
 
           <div className="technologies-container">
             <button
@@ -136,6 +136,27 @@ function Home() {
               onClick={() => techClicked("Figma")}
             >
               <Icon icon="devicon:figma" width="60" height="60" />
+            </button>
+            <button
+              className="technology"
+              aria-label="View all my Jest Projects"
+              onClick={() => techClicked("Jest")}
+            >
+              <Icon icon="vscode-icons:file-type-jest" width="60" height="60" />
+            </button>
+            <button
+              className="technology"
+              aria-label="View all my Github Actions (CI/CD) Projects"
+              onClick={() => techClicked("Github Actions (CI/CD)")}
+            >
+              <Icon icon="devicon:githubactions-wordmark" width="60" height="60" />
+            </button>
+            <button
+              className="technology"
+              aria-label="View all my Axios Projects"
+              onClick={() => techClicked("Axios")}
+            >
+              <Icon icon="devicon-plain:axios-wordmark" width="60" height="60"  />
             </button>
           </div>
 
