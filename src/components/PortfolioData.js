@@ -28,6 +28,8 @@ const PortfolioData = [
       "Implemented full CRUD operations (Create, Read, Update, Delete) for task management.",
       "Integrated RESTful APIs to persist and retrieve task data.",
       "Set up CI/CD pipelines with GitHub Actions for automated builds, tests, and deployments.",
+      "Implemented CI/CD pipelines using GitHub Actions for automated testing and deployment to Vercel",
+      "Integrated commit linting and pre-commit hooks (simple-git-hooks, commitlint) to enforce clean commit standards",
       "Practiced frontend testing with Jest and React Testing Library for unit and integration tests.",
       "Applied state management using React Context API and hooks (useState, useEffect, useContext).",
       "Designed and implemented dark mode and light mode for better accessibility.",
