@@ -41,6 +41,9 @@
   background-clip: text;
   color: transparent;
 }
+/* .mobile-typewriter {
+  display: none;
+} */
 
 @media (max-width: 767px) {
   .hero-section {
@@ -66,5 +69,10 @@
   .picture-container {
     padding: 0;
   }
-
+/* .desktop-typewriter {
+  display: none;
+}
+.mobile-typewriter {
+  display: block;
+} */
 }

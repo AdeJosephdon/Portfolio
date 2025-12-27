@@ -50,7 +50,7 @@ function IndividualProjectDescription() {
                 const position = (index - currentIndex + images.length) % images.length;
                 return (
                   <div key={index} className={`image-wrapper position-${position}`}>
-                    <img src={image} alt={`${randomItem.title} Slide ${index + 1}`} />
+                    <img src={image} alt={`${randomItem.title} Slide ${index + 1}`} loading="lazy"/>
                   </div>
                 );
               })}
